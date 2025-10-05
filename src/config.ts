@@ -4,7 +4,7 @@ export const siteConfig = {
   description: "Portfolio website of Ryan Fitzgerald",
   accentColor: "#1d4ed8",
   social: {
-    email: "smsarunachalam@gmail.com",
+    email: "smsarunachalam2003@gmail.com",
     linkedin: "https://linkedin.com/in/yourprofile",
     twitter: "https://x.com/rfitzio",
     github: "https://github.com/RyanFitzgerald",
