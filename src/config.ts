@@ -1,101 +1,107 @@
 export const siteConfig = {
   name: "Arunachalam S",
-  title: "Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  title: "Mechanical Engineer",
+  description: "Portfolio website of Arunachalam S - Mechanical Engineer",
   accentColor: "#1d4ed8",
   social: {
     email: "smsarunachalam2003@gmail.com",
     linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    twitter: "",
+    github: "https://github.com/yourprofile",
+  },
+  contact: {
+    phone: "+91 9600175914",
+    location: "Chennai, Tamil Nadu, India"
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "Mechanical Engineer with a B.Tech from NIT Trichy and experience in manufacturing and process improvement projects at Senvion, a leading wind turbine manufacturer. Skilled in project coordination, process optimization, and continuous improvement, with hands-on expertise in FEA tools (ANSYS, SpaceClaim). Proven ability to manage timelines, collaborate across teams, and implement solutions that enhance efficiency and quality.",
+  skills: {
+    engineeringTools: ["Ansys Workbench", "AutoCAD", "SolidWorks", "Ansys SpaceClaim"],
+    manufacturing: ["Process Optimization", "Lean Manufacturing", "Project Management"],
+    analytics: ["Power BI", "Microsoft Office"]
+  },
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
-      description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "Hybrid Battery Thermal Management",
+      description: "Designed and simulated a novel hybrid battery thermal management system combining air and liquid cooling for EVs.",
+      link: "#",
+      skills: ["ANSYS", "Thermal Simulation", "Optimization"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
-      description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "Thermo-Mechanical Analysis of CF PLA",
+      description: "Prepared standard samples and conducted compression, tensile, and thermal conductivity tests on 3D printed CF-reinforced PLA.",
+      link: "#",
+      skills: ["Additive Manufacturing", "Materials Testing", "Data Analysis"],
     },
     {
-      name: "ExtensionKit",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "Effect of Nanoparticles on CI Engine",
+      description: "Operated test setups to measure performance, emissions, and combustion characteristics of a CI engine under varying fuel conditions.",
+      link: "#",
+      skills: ["Engine Testing", "Fuel Analysis", "Data Interpretation"],
     },
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Senvion Wind Technology Pvt Ltd",
+      title: "Manufacturing Excellence Engineer",
+      dateRange: "Jun 2024 - Present",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Achieved a 71% reduction in curing cycle time by leading a Curing Optimization Project.",
+        "Leveraged Power BI for data-driven cycle time analysis to optimize production.",
+        "Initiated and executed a Paste Consumption Optimization Project.",
+        "Conducted comprehensive Root Cause Analysis (RCA) to minimize product defects.",
+        "Designed and implemented kitting trolleys using AutoCAD, improving shop floor logistics efficiency by 30%.",
+        "Performed advanced Finite Element Analysis (FEA) of wind turbine tower components using ANSYS."
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "Bureau of Indian Standards, Delhi",
+      title: "Research Assistant",
+      dateRange: "May 2023 - Jul 2023",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+        "Contributed to the development of an Indian standard for pneumatic door closure mechanisms in buses.",
+        "Conducted a comparative study of door closing systems through technical literature.",
+        "Performed field and industrial visits to validate design practices and collect technical data.",
+        "Consolidated research findings to prepare a working draft for the standardization process."
       ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
-    },
+    }
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "National Institute of Technology, Tiruchirappalli",
+      degree: "B.Tech in Mechanical Engineering",
+      dateRange: "Jun 2020 - May 2024",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
+        "CGPA: 8.51"
       ],
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
+      school: "The Velammal International School, Ponneri",
+      degree: "Class 12th",
+      dateRange: "May 2020",
       achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "Percentage: 90.8%"
       ],
     },
-  ],
-  certifcates: [
     {
-      name: "AI Dev Roundup Newsletter",
-      description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      school: "Pon Vidhyashram, Kolapakkam, Chennai",
+      degree: "Class 10th",
+      dateRange: "May 2018",
+      achievements: [
+        "Percentage: 83.8%"
+      ],
     }
   ],
+  certifications: [
+    {
+      name: "MTA: Introduction to Programming using Python",
+      issuer: "Microsoft",
+      year: "2023",
+      link: "#"
+    }
+  ],
+  achievements: [
+    "Secured an All India Rank 582 in GATE 2026 (AE).",
+    "Won 3rd Prize in Quality Slogan Competition conducted by SWTPL."
+  ]
 };

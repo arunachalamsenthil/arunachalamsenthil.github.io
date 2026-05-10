@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy-900: #050b14;
+  --color-navy-800: #0a1128;
+  --color-navy-700: #111e3b;
+  --color-accent-blue: #1d4ed8;
+  --color-accent-hover: #1e40af;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --font-sans: 'Inter', sans-serif;
+}
+
 body {
-  font-family: 'Segoe UI', monospace;
+  font-family: var(--font-sans);
+  background-color: var(--color-navy-800); /* Default to dark as it starts with Hero */
+  color: #1f2937;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-navy-900);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-navy-700);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-blue);
 }

@@ -1,0 +1,129 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="skills" class="bg-navy-800 text-white py-20 lg:py-28 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-12">
+      <span class="text-accent-blue font-bold text-sm tracking-wider uppercase mb-2 block">Skills</span>
+      <h2 class="text-3xl md:text-4xl font-bold">Skills & Expertise</h2>
+    </div>
+
+    <!-- Tabs Header -->
+    <div class="flex flex-wrap gap-2 mb-10 border-b border-white/10 pb-4">
+      <button class="tab-btn active bg-accent-blue text-white px-6 py-2.5 rounded-md text-sm font-medium transition-colors" data-target="engineering">
+        Engineering Tools
+      </button>
+      <button class="tab-btn hover:bg-white/5 text-gray-400 hover:text-white px-6 py-2.5 rounded-md text-sm font-medium transition-colors" data-target="manufacturing">
+        Manufacturing & Quality
+      </button>
+      <button class="tab-btn hover:bg-white/5 text-gray-400 hover:text-white px-6 py-2.5 rounded-md text-sm font-medium transition-colors" data-target="analytics">
+        Analytics & Management
+      </button>
+    </div>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="engineering">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+        {siteConfig.skills.engineeringTools.map((tool) => (
+          <div class="bg-navy-700/50 border border-white/10 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-accent-blue/50 transition-colors">
+            <div class="text-2xl font-bold text-gray-300">{tool.substring(0,2).toUpperCase()}</div>
+            <span class="text-sm font-medium text-gray-300">{tool}</span>
+          </div>
+        ))}
+      </div>
+      <div class="space-y-6 max-w-3xl">
+        {siteConfig.skills.engineeringTools.map((tool, index) => (
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-sm font-medium text-gray-300">{tool}</span>
+              <span class="text-sm font-medium text-accent-blue">{85 - (index * 5)}%</span>
+            </div>
+            <div class="w-full bg-navy-900 rounded-full h-2">
+              <div class="bg-accent-blue h-2 rounded-full" style={`width: ${85 - (index * 5)}%`}></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="tab-content hidden" id="manufacturing">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+        {siteConfig.skills.manufacturing.map((tool) => (
+          <div class="bg-navy-700/50 border border-white/10 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-accent-blue/50 transition-colors">
+            <div class="text-2xl font-bold text-gray-300">{tool.substring(0,2).toUpperCase()}</div>
+            <span class="text-sm font-medium text-gray-300">{tool}</span>
+          </div>
+        ))}
+      </div>
+      <div class="space-y-6 max-w-3xl">
+        {siteConfig.skills.manufacturing.map((tool, index) => (
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-sm font-medium text-gray-300">{tool}</span>
+              <span class="text-sm font-medium text-accent-blue">{90 - (index * 5)}%</span>
+            </div>
+            <div class="w-full bg-navy-900 rounded-full h-2">
+              <div class="bg-accent-blue h-2 rounded-full" style={`width: ${90 - (index * 5)}%`}></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="tab-content hidden" id="analytics">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+        {siteConfig.skills.analytics.map((tool) => (
+          <div class="bg-navy-700/50 border border-white/10 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-accent-blue/50 transition-colors">
+            <div class="text-2xl font-bold text-gray-300">{tool.substring(0,2).toUpperCase()}</div>
+            <span class="text-sm font-medium text-gray-300">{tool}</span>
+          </div>
+        ))}
+      </div>
+      <div class="space-y-6 max-w-3xl">
+        {siteConfig.skills.analytics.map((tool, index) => (
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-sm font-medium text-gray-300">{tool}</span>
+              <span class="text-sm font-medium text-accent-blue">{80 - (index * 5)}%</span>
+            </div>
+            <div class="w-full bg-navy-900 rounded-full h-2">
+              <div class="bg-accent-blue h-2 rounded-full" style={`width: ${80 - (index * 5)}%`}></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+    
+    <div class="mt-10">
+      <button class="bg-accent-blue hover:bg-accent-hover text-white px-6 py-2.5 rounded-md text-sm font-medium transition-colors">
+        View All Skills
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  const btns = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.tab-content');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active from all
+      btns.forEach(b => {
+        b.classList.remove('bg-accent-blue', 'text-white');
+        b.classList.add('text-gray-400', 'hover:bg-white/5');
+      });
+      contents.forEach(c => c.classList.add('hidden'));
+
+      // Add active to clicked
+      btn.classList.add('bg-accent-blue', 'text-white');
+      btn.classList.remove('text-gray-400', 'hover:bg-white/5');
+      
+      const targetId = btn.getAttribute('data-target');
+      if (targetId) {
+        document.getElementById(targetId)?.classList.remove('hidden');
+      }
+    });
+  });
+</script>

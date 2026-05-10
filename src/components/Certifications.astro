@@ -1,104 +1,82 @@
 ---
 import { siteConfig } from "../config";
-const hasCertifcates = siteConfig.certifcates && siteConfig.certifcates.length > 0;
 ---
 
-{
-  hasCertifcates && (
-    <section id="Certifications" class="p-8 sm:p-12 md:p-16 lg:p-24">
-      <div>
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-          <div class="lg:col-span-4">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-5xl font-bold text-gray-900">
-              Certifications
-            </h2>
-            <div
-              class="w-[75px] h-[5px] mt-2 rounded-full"
-              style={`background-color: ${siteConfig.accentColor}`}
-            />
-          </div>
+<section id="certifications" class="bg-white text-navy-800 py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <!-- Certifications Grid -->
+    <div class="mb-20">
+      <div class="mb-10">
+        <span class="text-accent-blue font-bold text-sm tracking-wider uppercase mb-2 block">Certifications</span>
+        <h2 class="text-3xl md:text-4xl font-bold">Certifications & Courses</h2>
+      </div>
 
-          <div class="lg:col-span-8">
-            <div class="space-y-8">
-              {siteConfig.certifcates.map((certifcates, index) => {
-                const Component = certifcates.link ? "a" : "div";
-                const linkProps = certifcates.link
-                  ? {
-                      href: certifcates.link,
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    }
-                  : {};
-
-                return (
-                  <div class="group relative">
-                    <Component
-                      {...linkProps}
-                      class={`block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 ${
-                        certifcates.link
-                          ? "hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
-                          : ""
-                      }`}
-                    >
-                      {certifcates.link && (
-                        <div class="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 flex items-center justify-center bg-gray-900 rounded-full text-white transition-all duration-300 group-hover:bg-gray-700">
-                          <svg
-                            class="w-4 h-4 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M7 17L17 7M17 7H7M17 7V17"
-                            />
-                          </svg>
-                        </div>
-                      )}
-
-                      <div class="space-y-4">
-                        <div>
-                          <span
-                            class="text-sm font-mono"
-                            style={{ color: siteConfig.accentColor }}
-                          >
-                            0{index + 1}
-                          </span>
-                          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
-                            {certifcates.name}
-                          </h3>
-                        </div>
-
-                        <p
-                          class={`text-base sm:text-lg text-gray-600 leading-relaxed ${certifcates.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
-                        >
-                          {certifcates.description}
-                        </p>
-
-                        {certifcates.skills && certifcates.skills.length > 0 && (
-                          <div class="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
-                            {certifcates.skills.map((skill) => (
-                              <span
-                                class={`px-2.5 sm:px-3 py-1 sm:py-1.5 bg-gray-900 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 ${
-                                  certifcates.link ? "group-hover:bg-gray-800" : ""
-                                }`}
-                              >
-                                {skill}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    </Component>
-                  </div>
-                );
-              })}
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {siteConfig.certifications.map((cert) => (
+          <div class="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow rounded-xl p-6 flex flex-col items-center text-center h-full">
+            <div class="w-16 h-16 mb-4 rounded-full bg-blue-50 flex items-center justify-center text-accent-blue font-bold text-xl border border-blue-100">
+               {cert.issuer.charAt(0)}
             </div>
+            <h3 class="font-bold text-sm text-navy-800 mb-1">{cert.name}</h3>
+            <p class="text-xs text-gray-500 mb-2">{cert.issuer}</p>
+            <p class="text-xs text-gray-400 mt-auto">{cert.year}</p>
           </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Education and Achievements Split -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      
+      <!-- Education -->
+      <div>
+        <div class="mb-8">
+          <span class="text-accent-blue font-bold text-sm tracking-wider uppercase mb-2 block">Education</span>
+          <h2 class="text-2xl font-bold">Academic Background</h2>
+        </div>
+        
+        <div class="space-y-8">
+          {siteConfig.education.map((edu) => (
+            <div class="flex gap-4">
+              <div class="w-16 h-16 shrink-0 rounded bg-surface-muted border border-gray-200 flex items-center justify-center font-bold text-navy-800 p-2 text-center text-[10px] leading-tight">
+                {edu.school.split(' ').map(w=>w[0]).slice(0,3).join('')}
+              </div>
+              <div>
+                <h3 class="font-bold text-navy-800">{edu.degree}</h3>
+                <p class="text-sm text-gray-600 mb-1">{edu.school}</p>
+                <div class="text-xs font-medium text-gray-500 mb-2">{edu.dateRange}</div>
+                {edu.achievements.map(ach => (
+                  <p class="text-sm text-accent-blue font-medium">{ach}</p>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
-  )
-}
+
+      <!-- Achievements -->
+      <div>
+        <div class="mb-8">
+          <span class="text-accent-blue font-bold text-sm tracking-wider uppercase mb-2 block">Achievements</span>
+          <h2 class="text-2xl font-bold">Awards & Honors</h2>
+        </div>
+        
+        <ul class="space-y-4 text-gray-600 text-sm">
+          {siteConfig.achievements.map((ach) => (
+            <li class="flex items-start gap-3">
+              <span class="text-accent-blue mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span class="leading-relaxed font-medium">{ach}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
