@@ -23,7 +23,7 @@ export const siteConfig = {
   projects: [
     {
       name: "Thermo-Mechanical Analysis of CF PLA",
-      description: "Prepared standard samples and conducted compression, tensile, and thermal conductivity tests on 3D printed CF-reinforced PLA.",
+      description: "Thermo-Mechanical Analysis of Carbon Fiber (CF) Reinforced PLA - Fabricated and tested CF-reinforced PLA and neat PLA specimens using a MakerBot Replicator to evaluate mechanical and thermal properties across different infill patterns and densities, identifying superior thermal performance in CF-reinforced PLA compared to neat PLA.",
       link: "#",
       skills: ["Additive Manufacturing", "Materials Testing", "Data Analysis"],
     },
