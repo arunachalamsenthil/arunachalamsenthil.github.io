@@ -39,9 +39,13 @@ import { siteConfig } from "../config";
         <div class="space-y-8">
           {siteConfig.education.map((edu) => (
             <div class="flex gap-4">
-              <div class="w-16 h-16 shrink-0 rounded bg-surface-muted border border-gray-200 flex items-center justify-center font-bold text-navy-800 p-2 text-center text-[10px] leading-tight">
-                {edu.school.split(' ').map(w=>w[0]).slice(0,3).join('')}
-              </div>
+              { (edu.school && (edu.school.includes('Tiruchirappalli') || edu.school.includes('Trichy') || edu.school.includes('NIT'))) ? (
+                <img src="https://tse2.mm.bing.net/th/id/OIP.JCwAIk5M7hn62mrFD2zINwAAAA?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="NIT Trichy logo" class="w-16 h-16 shrink-0 object-contain rounded border border-gray-200 p-1 bg-white" />
+              ) : (
+                <div class="w-16 h-16 shrink-0 rounded bg-surface-muted border border-gray-200 flex items-center justify-center font-bold text-navy-800 p-2 text-center text-[10px] leading-tight">
+                  {edu.school.split(' ').map(w=>w[0]).slice(0,3).join('')}
+                </div>
+              )}
               <div>
                 <h3 class="font-bold text-navy-800">{edu.degree}</h3>
                 <p class="text-sm text-gray-600 mb-1">{edu.school}</p>
