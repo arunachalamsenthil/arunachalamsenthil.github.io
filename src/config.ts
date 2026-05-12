@@ -96,7 +96,7 @@ export const siteConfig = {
     {
       name: "MTA: Introduction to Programming using Python",
       issuer: "Microsoft",
-      year: "2023",
+      year: "2021",
       link: "#"
     }
   ],
