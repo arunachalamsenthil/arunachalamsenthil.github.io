@@ -19,9 +19,9 @@ import { siteConfig } from "../config";
         <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col h-full">
           <!-- Card Image Placeholder -->
           <div class="h-48 bg-gray-200 relative overflow-hidden">
-             <!-- Different placeholder image per card based on index -->
+             <!-- Use explicit image from project if provided, otherwise fall back to indexed placeholder -->
              <img 
-               src={`/project_${index + 1}.png`} 
+               src={project.image ? project.image : `/project_${index + 1}.png`} 
                alt={project.name} 
                class="w-full h-full object-cover" 
              />

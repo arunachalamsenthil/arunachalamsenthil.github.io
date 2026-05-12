@@ -24,18 +24,21 @@ export const siteConfig = {
     {
       name: "Thermo-Mechanical Analysis of CF PLA",
       description: "Fabricated and tested CF-reinforced PLA and neat PLA specimens using a MakerBot Replicator to evaluate mechanical and thermal properties across different infill patterns and densities, identifying superior thermal performance in CF-reinforced PLA compared to neat PLA.",
+      image: "/project_1.png",
       link: "#",
       skills: ["Additive Manufacturing", "Materials Testing", "Data Analysis"],
     },
     {
       name: "Effect of Nanoparticles on CI Engine",
       description: "Operated test setups to measure performance, emissions, and combustion characteristics of a CI engine under varying fuel conditions.",
+      image: "/project_2.png",
       link: "#",
       skills: ["Engine Testing", "Fuel Analysis", "Data Interpretation"],
     },
     {
       name: "Hybrid Battery Thermal Management",
       description: "Designed and simulated a novel hybrid battery thermal management system combining air and liquid cooling for EVs.",
+      image: "/project_3.png",
       link: "#",
       skills: ["ANSYS", "Thermal Simulation", "Optimization"],
     },
