@@ -24,7 +24,7 @@ export const siteConfig = {
     {
       name: "Thermo-Mechanical Analysis of CF PLA",
       description: "Fabricated and tested CF-reinforced PLA and neat PLA specimens using a MakerBot Replicator to evaluate mechanical and thermal properties across different infill patterns and densities, identifying superior thermal performance in CF-reinforced PLA compared to neat PLA.",
-      image: "/project_1.png",
+      image: "https://thf.bing.com/th/id/OIP.S8TJvAgW9nnswYRGyf1cugHaE8?o=7&cb=thfc1rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
       link: "#",
       skills: ["Additive Manufacturing", "Materials Testing", "Data Analysis"],
     },
