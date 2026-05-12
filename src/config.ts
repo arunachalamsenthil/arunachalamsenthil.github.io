@@ -31,7 +31,7 @@ export const siteConfig = {
     {
       name: "Effect of Nanoparticles on CI Engine",
       description: "Operated test setups to measure performance, emissions, and combustion characteristics of a CI engine under varying fuel conditions.",
-      image: "/project_2.png",
+      image: "https://thf.bing.com/th/id/OIP.j03sl92d8jQuUjI30wj-_QHaEK?w=301&h=180&c=7&r=0&o=7&cb=thfc1&dpr=1.3&pid=1.7&rm=3",
       link: "#",
       skills: ["Engine Testing", "Fuel Analysis", "Data Interpretation"],
     },
