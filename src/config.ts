@@ -22,12 +22,6 @@ export const siteConfig = {
   },
   projects: [
     {
-      name: "Hybrid Battery Thermal Management",
-      description: "Designed and simulated a novel hybrid battery thermal management system combining air and liquid cooling for EVs.",
-      link: "#",
-      skills: ["ANSYS", "Thermal Simulation", "Optimization"],
-    },
-    {
       name: "Thermo-Mechanical Analysis of CF PLA",
       description: "Prepared standard samples and conducted compression, tensile, and thermal conductivity tests on 3D printed CF-reinforced PLA.",
       link: "#",
@@ -38,6 +32,12 @@ export const siteConfig = {
       description: "Operated test setups to measure performance, emissions, and combustion characteristics of a CI engine under varying fuel conditions.",
       link: "#",
       skills: ["Engine Testing", "Fuel Analysis", "Data Interpretation"],
+    },
+    {
+      name: "Hybrid Battery Thermal Management",
+      description: "Designed and simulated a novel hybrid battery thermal management system combining air and liquid cooling for EVs.",
+      link: "#",
+      skills: ["ANSYS", "Thermal Simulation", "Optimization"],
     },
   ],
   experience: [
