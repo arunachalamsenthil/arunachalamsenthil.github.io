@@ -38,7 +38,7 @@ export const siteConfig = {
     {
       name: "Hybrid Battery Thermal Management",
       description: "Designed and simulated a novel hybrid battery thermal management system combining air and liquid cooling for EVs.",
-      image: "/project_3.png",
+      image: "https://tse2.mm.bing.net/th/id/OIP.LJdvhLQ9ONVoYsomqAqBCQHaEJ?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3",
       link: "#",
       skills: ["ANSYS", "Thermal Simulation", "Optimization"],
     },
