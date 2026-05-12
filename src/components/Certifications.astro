@@ -43,6 +43,8 @@ import { siteConfig } from "../config";
                 <img src="https://tse2.mm.bing.net/th/id/OIP.JCwAIk5M7hn62mrFD2zINwAAAA?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="NIT Trichy logo" class="w-16 h-16 shrink-0 object-contain rounded border border-gray-200 p-1 bg-white" />
               ) : (edu.school && (edu.school.includes('Velammal') || edu.school.includes('Ponneri') || (edu.degree && edu.degree.includes('Class 12')))) ? (
                 <img src="https://www.eduska.com/assets/user_logo/46a27093e864e26f0d57cbc193e54015.jpg" alt="Velammal logo" class="w-16 h-16 shrink-0 object-contain rounded border border-gray-200 p-1 bg-white" />
+              ) : (edu.school && (edu.school.includes('Pon Vidhyashram') || edu.school.includes('Pon') || edu.school.includes('Kolapakkam') || (edu.degree && edu.degree.includes('Class 10')))) ? (
+                <img src="https://tse4.mm.bing.net/th/id/OIP.zpcQz6NJCdM3kswVn32HOwHaHa?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pon Vidhyashram logo" class="w-16 h-16 shrink-0 object-contain rounded border border-gray-200 p-1 bg-white" />
               ) : (
                 <div class="w-16 h-16 shrink-0 rounded bg-surface-muted border border-gray-200 flex items-center justify-center font-bold text-navy-800 p-2 text-center text-[10px] leading-tight">
                   {edu.school.split(' ').map(w=>w[0]).slice(0,3).join('')}
