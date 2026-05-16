@@ -14,7 +14,7 @@ export const siteConfig = {
     location: "Chennai, Tamil Nadu, India"
   },
   aboutMe:
-    "Mechanical Engineer with a B.Tech from NIT Trichy and experience in manufacturing and process improvement projects at Senvion, a leading wind turbine manufacturer. Skilled in project coordination, process optimization, and continuous improvement, with hands-on expertise in FEA tools (ANSYS, SpaceClaim). Proven ability to manage timelines, collaborate across teams, and implement solutions that enhance efficiency and quality.",
+    "Professional with 2+ years of experience in manufacturing, process improvement, project coordination, and business operations within the composite manufacturing industry and startup environment. Skilled in lean manufacturing, PFMEA, process optimization, tool validation, project coordination, market research, and strategic planning. Co-founded EVER, contributing to business development, stakeholder coordination, operational planning, and execution of growth initiatives. Proficient in ANSYS, SpaceClaim, SolidWorks, AutoCAD, Power BI, and Advanced Excel. Experienced in cross-functional collaboration, continuous improvement, data-driven problem solving, and operational execution, with a strong interest in leveraging engineering insights and analytics to support strategic decision-making and business growth.",
   skills: {
     engineeringTools: ["Ansys Workbench", "AutoCAD", "SolidWorks", "Ansys SpaceClaim"],
     manufacturing: ["Process Optimization", "Lean Manufacturing", "Project Management"],
