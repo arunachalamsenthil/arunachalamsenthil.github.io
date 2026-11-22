@@ -13,8 +13,11 @@ export const siteConfig = {
     phone: "+91 9600175914",
     location: "Chennai, Tamil Nadu, India"
   },
-  aboutMe:
-    "Professional with 2+ years of experience in manufacturing, process improvement, and project coordination within the composite manufacturing industry. Skilled in Lean Manufacturing, PFMEA, Process Optimization, Process Critical Tool Validation, and practical engineering solution development. Proficient in ANSYS, SpaceClaim, SolidWorks, AutoCAD, Power BI, and Advanced Excel. Experienced in cross-functional collaboration, continuous improvement, and data-driven problem solving, with a strong interest in leveraging engineering insights and analytics to support strategic decision-making and operational excellence.",
+  aboutMe: [
+    "Engineering and Operations Professional with 2.5+ years of experience in manufacturing excellence, process optimization, project coordination, and operational improvement within the composite manufacturing industry. Skilled in Lean Manufacturing, Lean Six Sigma, PFMEA, Root Cause Analysis, Process Validation, Critical Tool Validation, and Continuous Improvement.",
+    "Experienced in driving process efficiency, improving manufacturing workflows, strengthening process documentation, developing MIS reporting frameworks, and supporting data-driven decision-making through cross-functional collaboration. Proficient in ANSYS Workbench, SpaceClaim, SolidWorks, AutoCAD, Power BI, Advanced Excel, and SAP S/4HANA.",
+    "Combining engineering knowledge with analytical and problem-solving capabilities, I am passionate about bridging the gap between technology and business operations. My interests include engineering innovation, operations management, project management, operational excellence, and strategy-driven process improvement, with a focus on delivering measurable business impact."
+  ],
   skills: {
     engineeringTools: ["AutoCAD", "ANSYS Workbench (FEA)", "SpaceClaim", "SolidWorks", "MakerBot Replicator"],
     manufacturing: ["Lean Manufacturing", "Process Optimization", "PFMEA", "Continuous Improvement", "Process Critical Tool Validation", "Root Cause Analysis"],
