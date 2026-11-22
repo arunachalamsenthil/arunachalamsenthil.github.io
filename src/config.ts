@@ -1,13 +1,13 @@
 export const siteConfig = {
   name: "Arunachalam S",
-  title: "Mechanical Engineer",
-  description: "Portfolio website of Arunachalam S - Mechanical Engineer",
+  title: "Engineering & Operational Professional",
+  description: "Portfolio website of Arunachalam S - Engineering & Operational Professional",
   accentColor: "#1d4ed8",
   social: {
     email: "smsarunachalam2003@gmail.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
+    linkedin: "https://www.linkedin.com/in/arunachalam-s-0a4b03219",
     twitter: "",
-    github: "https://github.com/yourprofile",
+    github: "https://github.com/arunachalamsenthil",
   },
   contact: {
     phone: "+91 9600175914",
