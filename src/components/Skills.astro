@@ -1,129 +1,335 @@
 ---
-import { siteConfig } from "../config";
+// Skills & Expertise Section
 ---
 
-<section id="skills" class="bg-navy-800 text-white py-20 lg:py-28 border-t border-white/5">
-  <div class="max-w-7xl mx-auto px-6">
+<section id="skills" class="bg-navy-800 text-white py-20 lg:py-28 relative overflow-hidden border-t border-white/5">
+  <!-- Glowing circular background graphic matching the design -->
+  <div class="absolute right-0 top-0 w-[550px] h-[550px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute -right-20 -top-20 w-[450px] h-[450px] rounded-full border border-blue-500/10 pointer-events-none"></div>
+  <div class="absolute -right-48 -top-48 w-[700px] h-[700px] rounded-full border border-blue-500/5 pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <!-- Section Header -->
     <div class="mb-12">
       <span class="text-accent-blue font-bold text-sm tracking-wider uppercase mb-2 block">Skills</span>
-      <h2 class="text-3xl md:text-4xl font-bold">Skills & Expertise</h2>
+      <h2 class="text-3xl md:text-5xl font-bold text-white mb-3 tracking-tight">Skills &amp; Expertise</h2>
+      <p class="text-gray-400 text-base md:text-lg max-w-2xl leading-relaxed">
+        A blend of engineering, analytical and business skills to drive impactful solutions.
+      </p>
+      <div class="w-16 h-1 bg-accent-blue rounded-full mt-4"></div>
     </div>
 
-    <!-- Tabs Header -->
-    <div class="flex flex-wrap gap-2 mb-10 border-b border-white/10 pb-4">
-      <button class="tab-btn active bg-accent-blue text-white px-6 py-2.5 rounded-md text-sm font-medium transition-colors" data-target="engineering">
-        Engineering Tools
-      </button>
-      <button class="tab-btn hover:bg-white/5 text-gray-400 hover:text-white px-6 py-2.5 rounded-md text-sm font-medium transition-colors" data-target="manufacturing">
-        Manufacturing & Quality
-      </button>
-      <button class="tab-btn hover:bg-white/5 text-gray-400 hover:text-white px-6 py-2.5 rounded-md text-sm font-medium transition-colors" data-target="analytics">
-        Analytics & Management
-      </button>
+    <!-- Top Row: Engineering Tools & Analytics & Data -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+      
+      <!-- 1. Engineering Tools -->
+      <div class="bg-[#0c1631]/85 border border-white/10 hover:border-blue-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8 backdrop-blur-md shadow-xl shadow-black/25 transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <!-- Card Header -->
+          <div class="flex items-center gap-4 mb-7">
+            <div class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-600/30 shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                <path fill-rule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.11-.319.126-.445.083L6.14 5.374a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l1.072.852c.101.08.154.208.147.354a7.5 7.5 0 000 1.148c.007.146-.046.274-.147.354l-1.072.852a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.182-.516c.126-.043.279-.026.445.084.31.206.638.396.986.57.182.087.277.228.297.349l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.347-.173.677-.364.986-.57.166-.11.319-.127.445-.084l1.181.517a1.875 1.875 0 002.282-.818l.923-1.597a1.875 1.875 0 00-.432-2.385l-1.072-.852c-.101-.08-.154-.208-.147-.354a7.5 7.5 0 000-1.148c-.007-.146.046-.274.147-.354l1.072-.852a1.875 1.875 0 00.432-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.819l-1.182.516c-.126.043-.279.026-.445-.084a7.49 7.49 0 00-.986-.57c-.182-.087-.277-.228-.297-.349l-.178-1.071A1.875 1.875 0 0012.922 2.25h-1.844zM12 9a3 3 0 100 6 3 3 0 000-6z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl md:text-2xl font-bold text-white tracking-wide">Engineering Tools</h3>
+              <p class="text-xs md:text-sm text-gray-400 font-normal mt-0.5">Design. Analyse. Innovate.</p>
+            </div>
+          </div>
+
+          <!-- Skills Badges -->
+          <div class="flex flex-wrap gap-3.5">
+            <!-- AutoCAD -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <path d="M12.8 2.5L3.2 20.8h4.1l1.9-3.8h7.4l1.4 3.8h4.2L12.8 2.5zm-2.8 11.4l2.4-4.8 1.8 4.8H10z" fill="#E2231A"/>
+                <path d="M12.8 2.5L9.1 10.3l2.4 3.6 1.7-4.8z" fill="#FF5252"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">AutoCAD</span>
+            </div>
+
+            <!-- ANSYS Workbench (FEA) -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <path d="M7.8 2.8L2 21.2h4.6l1.6-4.9h4.7l-3.2-8.5 4-5H7.8z" fill="#00355F"/>
+                <path d="M14.2 2.8l-4.5 5.8 3.2 8h4.7l-3.4-13.8z" fill="#FFB71B"/>
+                <path d="M15.4 21.2H22L18.6 8.5l-4 8.2h2l-.7 4.5z" fill="#0077BE"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">ANSYS Workbench (FEA)</span>
+            </div>
+
+            <!-- SpaceClaim -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2.5L3.5 7.4v9.2L12 21.5l8.5-4.9V7.4L12 2.5z" stroke="#0284C7" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M12 2.5v19M3.5 7.4L12 12l8.5-4.6" stroke="#38BDF8" stroke-width="1.8" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="2.5" fill="#38BDF8"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">SpaceClaim</span>
+            </div>
+
+            <!-- SolidWorks -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2.5l8 4.6v9.8l-8 4.6-8-4.6V7.1l8-4.6z" fill="#E61C24"/>
+                <path d="M12 2.5l8 4.6-8 4.6-8-4.6 8-4.6z" fill="#FF4D55"/>
+                <path d="M12 11.7l8-4.6v9.8l-8 4.6V11.7z" fill="#C41219"/>
+                <path d="M9 9.5l2-1.2 3.5 2v2.5l-3.5 2-2-1.1" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">SolidWorks</span>
+            </div>
+
+            <!-- MakerBot Replicator -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <rect x="4" y="6" width="16" height="13" rx="3" fill="#00AEEF"/>
+                <circle cx="8.5" cy="12.5" r="2" fill="#FFFFFF"/>
+                <circle cx="15.5" cy="12.5" r="2" fill="#FFFFFF"/>
+                <circle cx="8.5" cy="12.5" r="0.8" fill="#0B132B"/>
+                <circle cx="15.5" cy="12.5" r="0.8" fill="#0B132B"/>
+                <path d="M9 16h6" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M12 2.5v3.5M10 2.5h4" stroke="#00AEEF" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M2 11h2M20 11h2" stroke="#00AEEF" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">MakerBot Replicator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Analytics & Data -->
+      <div class="bg-[#0c1631]/85 border border-white/10 hover:border-blue-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8 backdrop-blur-md shadow-xl shadow-black/25 transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <!-- Card Header -->
+          <div class="flex items-center gap-4 mb-7">
+            <div class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-600/30 shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl md:text-2xl font-bold text-white tracking-wide">Analytics &amp; Data</h3>
+              <p class="text-xs md:text-sm text-gray-400 font-normal mt-0.5">Turn Data into Decisions.</p>
+            </div>
+          </div>
+
+          <!-- Skills Badges -->
+          <div class="flex flex-wrap gap-3.5">
+            <!-- Power BI -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <rect x="4" y="13" width="4" height="8" rx="1" fill="#F2C811"/>
+                <rect x="10" y="8" width="4" height="13" rx="1" fill="#F2C811"/>
+                <rect x="16" y="3" width="4" height="18" rx="1" fill="#E6AD10"/>
+                <path d="M16 3h3a1 1 0 011 1v17h-4V3z" fill="#DDA006"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Power BI</span>
+            </div>
+
+            <!-- Advanced Excel -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <rect x="5" y="3" width="16" height="18" rx="2" fill="#107C41"/>
+                <path d="M8.5 7.5h9M8.5 12h9M8.5 16.5h9M13 7.5v9" stroke="#33C481" stroke-width="1.2"/>
+                <rect x="2.5" y="6" width="8.5" height="12" rx="1.5" fill="#0E6435"/>
+                <path d="M4.5 9.5l4.5 5M9 9.5l-4.5 5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Advanced Excel</span>
+            </div>
+
+            <!-- SQL -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <ellipse cx="12" cy="6" rx="8" ry="3.2" fill="#93C5FD"/>
+                <ellipse cx="12" cy="6" rx="8" ry="3.2" fill="#3B82F6"/>
+                <path d="M4 6v5c0 1.8 3.6 3.2 8 3.2s8-1.4 8-3.2V6" fill="#2563EB"/>
+                <ellipse cx="12" cy="11" rx="8" ry="3.2" fill="#60A5FA"/>
+                <path d="M4 11v5c0 1.8 3.6 3.2 8 3.2s8-1.4 8-3.2v-5" fill="#1D4ED8"/>
+                <ellipse cx="12" cy="16" rx="8" ry="3.2" fill="#3B82F6"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">SQL</span>
+            </div>
+
+            <!-- Python -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <path d="M11.9 2c-3.1 0-5 .9-5 2.6v2h5v.8H5.2C3.4 7.4 2 9 2 11.2c0 2.2 1.4 3.6 3.2 3.6h1.5v-1.8c0-1.8 1.5-3.3 3.3-3.3h5V8.1c0-1.8-1.5-3.3-3.3-3.3H11.9V2zm-1.8 1.4a.8.8 0 110 1.6.8.8 0 010-1.6z" fill="#387EB8"/>
+                <path d="M12.1 22c3.1 0 5-.9 5-2.6v-2h-5v-.8h6.7c1.8 0 3.2-1.6 3.2-3.8 0-2.2-1.4-3.6-3.2-3.6h-1.5v1.8c0 1.8-1.5 3.3-3.3 3.3h-5v1.6c0 1.8 1.5 3.3 3.3 3.3h-.2v2.8zm1.8-1.4a.8.8 0 110-1.6.8.8 0 010 1.6z" fill="#FFE052"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Python</span>
+            </div>
+
+            <!-- SAP S/4HANA -->
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+              <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="5" width="20" height="14" rx="3" fill="#008FD3"/>
+                <path d="M4.5 14.5c.3.5.8.8 1.6.8 1 0 1.7-.5 1.7-1.3 0-.8-.6-1.1-1.3-1.4l-.5-.2c-1.1-.4-1.8-1-1.8-2 0-1.2 1-2.1 2.4-2.1 1 0 1.7.4 2.1 1.1l-.8.6c-.3-.5-.7-.7-1.3-.7-.8 0-1.3.5-1.3 1.1 0 .6.5.9 1.2 1.2l.5.2c1.2.4 1.9 1 1.9 2.1 0 1.4-1.1 2.3-2.7 2.3-1.3 0-2.1-.6-2.5-1.4l.9-.6zM11.8 8.5h1.2l2.6 6.8h-1.3l-.6-1.7h-2.6l-.6 1.7h-1.3l2.6-6.8zm1.5 4.1L12.4 10l-.9 2.6h1.8zm4.4-4.1h2.2c1.4 0 2.3.8 2.3 2s-.9 2-2.3 2h-1.1v2.8h-1.1V8.5zm1.1 3h1.1c.8 0 1.2-.4 1.2-1s-.4-1-1.2-1h-1.1v2z" fill="#FFFFFF"/>
+              </svg>
+              <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">SAP S/4HANA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Tabs Content -->
-    <div class="tab-content" id="engineering">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-        {siteConfig.skills.engineeringTools.map((tool) => (
-          <div class="bg-navy-700/50 border border-white/10 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-accent-blue/50 transition-colors">
-            <div class="text-2xl font-bold text-gray-300">{tool.substring(0,2).toUpperCase()}</div>
-            <span class="text-sm font-medium text-gray-300">{tool}</span>
-          </div>
-        ))}
+    <!-- Bottom Row: Professional Skills (Full Width) -->
+    <div class="bg-[#0c1631]/85 border border-white/10 hover:border-blue-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8 backdrop-blur-md shadow-xl shadow-black/25 transition-all duration-300">
+      <!-- Card Header -->
+      <div class="flex items-center gap-4 mb-7">
+        <div class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-600/30 shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+            <path fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.058.002.115.006.173.011a6.002 6.002 0 015.074 5.942v5.334a6.002 6.002 0 01-5.074 5.942A48.878 48.878 0 0112 22.8c-2.383 0-4.697-.174-6.873-.566a6.002 6.002 0 01-5.074-5.942V11.41a6.002 6.002 0 015.074-5.942c.058-.005.115-.009.173-.011V5.25zm7.5.205V5.25a1.5 1.5 0 00-1.5-1.5h-3a1.5 1.5 0 00-1.5 1.5v.205c.491.01.977.033 1.458.07 1.002.076 2.02.076 3.084 0a48.71 48.71 0 001.458-.07z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold text-white tracking-wide">Professional Skills</h3>
+          <p class="text-xs md:text-sm text-gray-400 font-normal mt-0.5">Build. Optimize. Lead.</p>
+        </div>
       </div>
-      <div class="space-y-6 max-w-3xl">
-        {siteConfig.skills.engineeringTools.map((tool, index) => (
-          <div>
-            <div class="flex justify-between mb-2">
-              <span class="text-sm font-medium text-gray-300">{tool}</span>
-              <span class="text-sm font-medium text-accent-blue">{85 - (index * 5)}%</span>
-            </div>
-            <div class="w-full bg-navy-900 rounded-full h-2">
-              <div class="bg-accent-blue h-2 rounded-full" style={`width: ${85 - (index * 5)}%`}></div>
-            </div>
-          </div>
-        ))}
+
+      <!-- Skills Badges Grid / Wrap -->
+      <div class="flex flex-wrap gap-3.5">
+        
+        <!-- Lean Manufacturing -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <path d="M3 21h18v-8l-5 3v-4l-5 3V9l-5 3v9z" fill="#0284C7"/>
+            <path d="M3 21h18" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="17.5" cy="6.5" r="2" fill="#38BDF8"/>
+            <circle cx="14" cy="4" r="1.2" fill="#7DD3FC"/>
+            <circle cx="11" cy="5" r="0.8" fill="#BAE6FD"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Lean Manufacturing</span>
+        </div>
+
+        <!-- Process Optimization -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <path d="M3 18l6-6 4 4 7-8" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 8h4v4" stroke="#60A5FA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="12" r="2" fill="#60A5FA"/>
+            <circle cx="13" cy="16" r="2" fill="#3B82F6"/>
+            <path d="M3 21h18" stroke="#1E40AF" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Process Optimization</span>
+        </div>
+
+        <!-- Project Management -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <rect x="4" y="5" width="16" height="16" rx="2.5" fill="#0284C7"/>
+            <path d="M8 3h8v3H8V3z" fill="#38BDF8" rx="1"/>
+            <path d="M9 10h7M9 14h5M9 18h7" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="7" cy="10" r="0.8" fill="#FDE047"/>
+            <circle cx="7" cy="14" r="0.8" fill="#FDE047"/>
+            <circle cx="7" cy="18" r="0.8" fill="#FDE047"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Project Management</span>
+        </div>
+
+        <!-- Root Cause Analysis -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <circle cx="10.5" cy="10.5" r="7" stroke="#38BDF8" stroke-width="2.2"/>
+            <circle cx="10.5" cy="10.5" r="2.5" stroke="#F59E0B" stroke-width="1.8"/>
+            <path d="M15.5 15.5L21 21" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Root Cause Analysis</span>
+        </div>
+
+        <!-- PFMEA & 8D -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l8 3.5v6c0 5-3.5 9.5-8 10.5-4.5-1-8-5.5-8-10.5v-6L12 2z" fill="#059669"/>
+            <path d="M8.5 12l2.5 2.5 5-5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">PFMEA &amp; 8D</span>
+        </div>
+
+        <!-- Process Validation -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9.5" fill="#10B981"/>
+            <path d="M8 12.2l2.8 2.8 5.4-5.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Process Validation</span>
+        </div>
+
+        <!-- Operational Excellence -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <path d="M6 4h12v6c0 3.3-2.7 6-6 6s-6-2.7-6-6V4z" fill="#F59E0B"/>
+            <path d="M6 6H3c0 2.5 1.5 4.5 4 4.8V6zm12 0h3c0 2.5-1.5 4.5-4 4.8V6z" fill="#D97706"/>
+            <path d="M10 16h4v3h-4v-3zm-2 3h8v2H8v-2z" fill="#FBBF24"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Operational Excellence</span>
+        </div>
+
+        <!-- Cross-Functional Collaboration -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="7" r="3" fill="#38BDF8"/>
+            <path d="M6.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5H6.5z" fill="#0284C7"/>
+            <circle cx="5" cy="9" r="2.2" fill="#7DD3FC"/>
+            <path d="M1.5 19c0-2.2 1.8-3.8 4-3.8.7 0 1.4.2 2 .5-.7 1-1 2.1-1 3.3H1.5z" fill="#0369A1"/>
+            <circle cx="19" cy="9" r="2.2" fill="#7DD3FC"/>
+            <path d="M22.5 19c0-2.2-1.8-3.8-4-3.8-.7 0-1.4.2-2 .5.7 1 1 2.1 1 3.3h5z" fill="#0369A1"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Cross-Functional Collaboration</span>
+        </div>
+
+        <!-- Data-Driven Decision Making -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2a6.5 6.5 0 00-4 11.6V16a1.5 1.5 0 001.5 1.5h5A1.5 1.5 0 0016 16v-2.4A6.5 6.5 0 0012 2z" fill="#FBBF24"/>
+            <path d="M10 19.5h4M10.5 21.5h3" stroke="#D97706" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M12 6v4M10 8h4" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Data-Driven Decision Making</span>
+        </div>
+
+        <!-- Lean Six Sigma -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="18" height="18" rx="4" fill="#991B1B"/>
+            <text x="12" y="16.5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6σ</text>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Lean Six Sigma</span>
+        </div>
+
+        <!-- Continuous Improvement -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3a9 9 0 018.5 6H17M12 21a9 9 0 01-8.5-6H7" stroke="#10B981" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M20.5 9l-3.5-3.5M3.5 15l3.5 3.5" stroke="#10B981" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Continuous Improvement</span>
+        </div>
+
+        <!-- Kaizen & 5S -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="#0284C7" stroke-width="2" fill="#0C4A6E"/>
+            <text x="12" y="16" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#38BDF8" text-anchor="middle">5S</text>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">Kaizen &amp; 5S</span>
+        </div>
+
+        <!-- NPI Process -->
+        <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl bg-[#091124]/90 border border-white/10 hover:border-accent-blue/50 hover:bg-[#0f1b38] transition-all duration-200 shadow-sm group">
+          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2.5c3 3 5 7.5 5 11.5l-2.5 2-2.5-1.5-2.5 1.5L7 14c0-4 2-8.5 5-11.5z" fill="#6366F1"/>
+            <circle cx="12" cy="9" r="1.8" fill="#FFFFFF"/>
+            <path d="M7 14l-3 2 1.5 3 3.5-1.5M17 14l3 2-1.5 3-3.5-1.5" fill="#818CF8"/>
+            <path d="M12 16v5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="text-sm md:text-base font-medium text-gray-200 group-hover:text-white transition-colors">NPI Process</span>
+        </div>
+
       </div>
     </div>
 
-    <div class="tab-content hidden" id="manufacturing">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-        {siteConfig.skills.manufacturing.map((tool) => (
-          <div class="bg-navy-700/50 border border-white/10 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-accent-blue/50 transition-colors">
-            <div class="text-2xl font-bold text-gray-300">{tool.substring(0,2).toUpperCase()}</div>
-            <span class="text-sm font-medium text-gray-300">{tool}</span>
-          </div>
-        ))}
-      </div>
-      <div class="space-y-6 max-w-3xl">
-        {siteConfig.skills.manufacturing.map((tool, index) => (
-          <div>
-            <div class="flex justify-between mb-2">
-              <span class="text-sm font-medium text-gray-300">{tool}</span>
-              <span class="text-sm font-medium text-accent-blue">{90 - (index * 5)}%</span>
-            </div>
-            <div class="w-full bg-navy-900 rounded-full h-2">
-              <div class="bg-accent-blue h-2 rounded-full" style={`width: ${90 - (index * 5)}%`}></div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    <div class="tab-content hidden" id="analytics">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-        {siteConfig.skills.analytics.map((tool) => (
-          <div class="bg-navy-700/50 border border-white/10 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-accent-blue/50 transition-colors">
-            <div class="text-2xl font-bold text-gray-300">{tool.substring(0,2).toUpperCase()}</div>
-            <span class="text-sm font-medium text-gray-300">{tool}</span>
-          </div>
-        ))}
-      </div>
-      <div class="space-y-6 max-w-3xl">
-        {siteConfig.skills.analytics.map((tool, index) => (
-          <div>
-            <div class="flex justify-between mb-2">
-              <span class="text-sm font-medium text-gray-300">{tool}</span>
-              <span class="text-sm font-medium text-accent-blue">{80 - (index * 5)}%</span>
-            </div>
-            <div class="w-full bg-navy-900 rounded-full h-2">
-              <div class="bg-accent-blue h-2 rounded-full" style={`width: ${80 - (index * 5)}%`}></div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-    
-    <div class="mt-10">
-      <button class="bg-accent-blue hover:bg-accent-hover text-white px-6 py-2.5 rounded-md text-sm font-medium transition-colors">
-        View All Skills
-      </button>
-    </div>
   </div>
 </section>
-
-<script>
-  const btns = document.querySelectorAll('.tab-btn');
-  const contents = document.querySelectorAll('.tab-content');
-
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Remove active from all
-      btns.forEach(b => {
-        b.classList.remove('bg-accent-blue', 'text-white');
-        b.classList.add('text-gray-400', 'hover:bg-white/5');
-      });
-      contents.forEach(c => c.classList.add('hidden'));
-
-      // Add active to clicked
-      btn.classList.add('bg-accent-blue', 'text-white');
-      btn.classList.remove('text-gray-400', 'hover:bg-white/5');
-      
-      const targetId = btn.getAttribute('data-target');
-      if (targetId) {
-        document.getElementById(targetId)?.classList.remove('hidden');
-      }
-    });
-  });
-</script>
